@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Html Practice Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+    <style type="text/css">
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="./index.html">Bootstrap</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="">
+                        <a href="./Index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="./getting-started.html">Get started</a>
+                    </li>
+                    <li class="">
+                        <a href="./intro-html.html">HTML</a>
+                    </li>
+                    <li class="">
+                        <a href="./base-css.html">Base CSS</a>
+                    </li>
+                    <li class="active">
+                        <a href="./javascript.html">Javascript</a>
+                    </li>
+                    <li class="">
+                        <a href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="jumbotron subhead" id="overview">
+    <div class="container">
+        <h1>Tutorial</h1>
+        <p class="lead">Welcome to Html Practice Example</p>
+    </div>
+</header>
+<div class="container-fluid">
+<div class="row-fluid">
+<div  class="span3 bs-docs-sidebar">
+    <ul data-spy="affix" data-offset-top="200" class="nav nav-list bs-docs-sidenav">
+        <li class="active"><a href="#intro"><i class="icon-chevron-right"></i> Intro</a></li>
+        <li class=""><a href="#javascript"><i class="icon-chevron-right"></i> Javascript</a></li>
+        <li class=""><a href="#jquery"><i class="icon-chevron-right"></i> Jquery</a></li>
+        <li class=""><a href="#handlebars"><i class="icon-chevron-right"></i> Handlebars</a></li>
+        <li class=""><a href="#listjs"><i class="icon-chevron-right"></i> ListJS</a></li>
+        <li class=""><a href="#underscore"><i class="icon-chevron-right"></i> Underscore</a></li>
+        <li class=""><a href="#noty"><i class="icon-chevron-right"></i> Noty</a></li>
+    </ul>
+</div>
+<div class="span9">
+<section id="intro">
+    <div class="page-header">
+        <h4>Intro</h4>
+    </div>
+    <div>
+        <p>In This section wiil be explain javascript and how can we use it in web development project</p>
+    </div>
+</section>
+<section id="javascript">
+    <div class="page-header">
+        <h4>Javascript</h4>
+    </div>
+    <div>
+        <p>What is javascript: Is a script language used to add interactivity for web pages. with this is possible to manipulate html elements and change them.
+            This language is compose for simple snippets of code that can give a simple actions to page, like button action, image slide, resize elements, change elements,...
+        </p>
+        <p>It's possible to press button and call this function to response of input of user with Hello + user input value.</p>
+        <form class="bs-docs-example">
+            <label>User Name</label>
+            <input type="text" id="txtName" placeholder="Input Name">
+            <span class="help-block">Please input your name here</span>
+            <button type="submit" class="btn" onclick="sayHello();">Submit</button>
+        </form>
+<pre class="prettyprint linenums">function sayHello(){
+    alert("Hello " +$("[id$=txtName]").val() + " !");
+    event.preventDefault();
+}</pre>
+        <p>For javascript use it's necessary to learn some basic principles. </p>
+        <p>Variables definition</p>
+<pre class="prettyprint linenums">
+var variable;
+var stringDefined = "hello";
+var intDefined = 0;
+</pre>
+        <p>Function Declaration</p>
+<pre class="prettyprint linenums">
+function functionName(){
+    //do stuff
+}
+</pre>
+        <p>function with input variables</p>
+<pre class="prettyprint linenums">
+function functionName(variable1, variable2){
+    //do stuff
+}
+</pre>
+
+        <p> <b>If</b> Statement</p>
+<pre class="prettyprint linenums">
+function functionName(){
+    if(true){
+        //do stuff
+    } else {
+        //do stuff
+    }
+}
+</pre>
+
+<pre class="prettyprint linenums">
+if(a == b){
+if(a != b){
+if(a === b){
+if(a &lt; b){
+if(a &gt; b){
+if(a == "b"){
+</pre>
+
+        <p> <b>for</b> Statement</p>
+<pre class="prettyprint linenums">
+function functionName(){
+    for (initialization; condition; update) {
+        //do stuff
+    }
+}
+</pre>
+
+<pre class="prettyprint linenums">
+function functionName(){
+    for (variable in object) {
+        //do stuff
+    }
+}
+</pre>
+
+        <p> <b>while</b> Statement</p>
+<pre class="prettyprint linenums">
+function functionName(){
+    while (condition) {
+    //do stuff
+    }
+}
+</pre>
+
+        <p> <b>do</b> Statement</p>
+<pre class="prettyprint linenums">
+function functionName(){
+    do (condition) {
+    //do stuff
+    } while (condition);
+}
+</pre>
+        <p> <b>switch</b> Statement</p>
+<pre class="prettyprint linenums">
+function functionName(){
+    switch (expression) {
+    case expression:
+        //do stuff
+        break;
+    default:
+        //do stuff
+        break;
+}
+</pre>
+        <p> <b>try</b> Statement</p>
+<pre class="prettyprint linenums">
+function functionName(){
+    try {
+    //do stuff
+    } catch (variable) {
+    //do stuff
+    }
+}
+</pre>
+        <form class="bs-docs-example">
+            <label>User Name</label>
+            <input type="text" id="txtName2" placeholder="Input Name"><span id="lblNameResult"></span>
+            <span class="help-block">Please input your name here</span>
+            <button type="submit"  class="btn" onclick="return printName();">Submit</button>
+        </form>
+<pre class="prettyprint linenums">
+function printName(){
+    $("[id$=lblNameResult]").val($("[id$=txtName2]").val());
+    event.preventDefault();
+}
+</pre>
+    </div>
+</section>
+<section id="jquery">
+    <div class="page-header">
+        <h4>Jquery</h4>
+    </div>
+    <div>
+        <p>JQuery is a javaScript library designed to simplify the client-side scripting of HTML. This must be include in header of web page where jquery will be used</p>
+        <p> Include</p>
+        <pre class="prettyprint linenums">&lt;script src="http://code.jquery.com/jquery-latest.js"&gt;&lt;/script&gt;</pre>
+        <p> Basic selectors</p>
+<pre class="prettyprint linenums">
+$("*") // Select All elements
+$(".class") // Select All class with by class name
+$("[id$=elementID]") // Select All elements with elementID
+$("[input]") // Select All input elements
+$("[input:text]") // Select All input text elements
+$("[input]", ".class") // Multiple selector
+</pre>
+        <p>With jquery it's possible to define functions on page load or on other page status more simple, for example we can wait page load with the following code:</p>
+<pre class="prettyprint linenums">
+$(document).ready(function(){
+    //do stuff
+}
+</pre>
+        <p>Now inside this section it's possible to add event handlers to object</p>
+        <form class="bs-docs-example">
+            <label>User Name</label>
+            <input type="text" id="txtName3" placeholder="Input Name"><span id="lblNameResult3"></span>
+            <span class="help-block">Please input your name here</span>
+            <button type="submit" id="btnSubmit3" class="btn" >Submit</button>
+        </form>
+<pre class="prettyprint linenums">
+$(document).ready(function(){
+    $("[id$=btnSubmit3]").click(function(){
+        $("[id$=lblNameResult3]").text("Hello "+$("[id$=txtName3]").val()+" and welcome to this tutorial!!!");
+        event.preventDefault();
+    });
+});
+</pre>
+        <p>One property that could help with event's is <i>preventDefault()</i> which function is to prevent that button or other object execute default function like redirect to other page ou submit form. </p>
+        <pre class="prettyprint linenums">event.preventDefault();</pre>
+<pre class="prettyprint linenums">
+$(document).ready(function(){
+    $("[id$=btnSubmit3]").click(function(){
+        //do stuff
+        event.preventDefault();
+    });
+});
+</pre>
+        <p>For actions like change value of label,show/hide elements, change color and enable disable elements like buttons the following properties help this</p>
+<pre class="prettyprint linenums">
+    $("[id$=elementID]").addClass("addedClass"); //add css class to element
+    $("[id$=elementID]").removeClass("class"); //remove css class to element
+    $("[id$=elementID]").hide(); //hide element
+    $("[id$=elementID]").show(); //show element
+    $("[id$=elementID]").removeAttr("disabled"); //remove attribute from element
+    $("[id$=elementID]").attr("disabled","disabled"); //change attribute value to element
+</pre>
+        <p>Example with some of this properties</p>
+        <form class="bs-docs-example">
+            <label id="lblUsername4">User Name of Page</label>
+            <p>
+                <label class="checkbox">
+                    <input type="checkbox" id="chkEnable4" value="Enable" checked="checked"> Enable Buttons
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" id="chkDisable4" value="Disable" >Disable Buttons
+                </label>
+            </p><p>
+                <button type="submit" id="btnShow4" class="btn" >Show Username</button>
+                <button type="submit" id="btnHide4" class="btn" >Hide Username</button>
+            </p><p class="btn-group btn-group-vertical">
+            <button type="button" id="btnAddClass4" class="btn btn-danger" >Change Username to Red</button>
+            <button type="button" id="btnRemoveClass4" class="btn btn-inverse" >Remove Username from Red</button>
+        </p>
+        </form>
+<pre class="prettyprint linenums">
+$(document).ready(function(){
+    $("[id$=btnShow4]").click(function(){
+        $("[id$=lblUsername4]").show();
+        event.preventDefault();
+    });
+
+    $("[id$=btnHide4]").click(function(){
+        $("[id$=lblUsername4]").hide();
+        event.preventDefault();
+    });
+
+    $("[id$=chkEnable4]").click(function(){
+        $("[id$=btnShow4]").removeAttr("disabled");
+        $("[id$=btnHide4]").removeAttr("disabled");
+        $("[id$=btnAddClass4]").removeAttr("disabled");
+        $("[id$=btnRemoveClass4]").removeAttr("disabled");
+        $("[id$=chkDisable4]").removeAttr("checked");
+    });
+
+    $("[id$=chkDisable4]").click(function(){
+        $("[id$=btnShow4]").attr("disabled","disabled");
+        $("[id$=btnHide4]").attr("disabled","disabled");
+        $("[id$=btnAddClass4]").attr("disabled","disabled");
+        $("[id$=btnRemoveClass4]").attr("disabled","disabled");
+        $("[id$=chkEnable4]").removeAttr("checked");
+    });
+
+    $("[id$=btnAddClass4]").click(function(){
+        $("[id$=lblUsername4]").addClass('red');
+        event.preventDefault();
+    });
+
+    $("[id$=btnRemoveClass4]").click(function(){
+        $("[id$=lblUsername4]").removeClass('red');
+        event.preventDefault();
+    });
+});
+</pre>
+        <p>With json it's possible to make a asynchronous request like ajax request to improve performance and functionality of web page.<br>
+        Some possibilities of this is to make a request to do a auto-complete in textbox or fill one dropdown with data on other element action.
+        </p>
+        <pre class="prettyprint linenums">
+        //make a json request and work with json data
+        </pre>
+    </div>
+</section>
+<section id="handlebars">
+    <div class="page-header">
+        <h4>Handlebars</h4>
+    </div>
+    <div>
+    <p>Handlebars is a javascript library for template html pages. with handlebars it's possible to pass a json data to template and the page was generated based on this template.
+    A example of handlebars template is composed by html tags and for dynamic elements with bracelets like <code>{{</code> data element <code>}}</code>.
+    </p>
+    <p>Reference to Handlebars</p>
+<pre class="prettyprint linenums">
+&lt;script src="https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.1.js"&gt;&lt;/script&gt;
+</pre>
+        <p>Sample template</p>
+<pre class="prettyprint linenums">
+&lt;script id="person-template" type="text/x-handlebars-template"&gt;
+&lt;div class="person"&gt;
+  &lt;h1&gt;{{Name}}&lt;/h1&gt;
+  &lt;h5&gt;Age:{{Age}}&lt;/h5&gt;
+  &lt;h5&gt;Location:{{Location}}&lt;/h5&gt;
+  &lt;h5&gt;Origin:{{Origin}}&lt;/h5&gt;
+&lt;/div&gt;
+&lt;/script&gt;
+</pre>
+    <p>Fill this template with data it's necessary to identify the template, data and location of template.</p>
+<pre class="prettyprint linenums">
+var source = $("#"+templateId+"").html();//get html of template
+var template = Handlebars.compile(source);//handlebars compile the template
+var html = template(data); // add data to template
+$("[id$="+destinationId+"]").empty(); //clean template area
+$("[id$="+destinationId+"]").html(html); //Add html generated with temaplate and data to final location
+</pre>
+    <p>Exist some helper functions that could be created to make some data changes and help with data representation</p>
+<pre class="prettyprint linenums">
+Handlebars.registerHelper('link', function(text, url) {
+  text = Handlebars.Utils.escapeExpression(text);
+  url  = Handlebars.Utils.escapeExpression(url);
+
+  var result = '&lt;a href="' + url + '"&gt;' + text + '&lt;/a&gt;';
+
+  return new Handlebars.SafeString(result);//if the result is html the return should have SafeString.
+});
+</pre>
+        <p>Iterative method, for each element in list</p>
+<pre class="prettyprint linenums">
+&lt;ul class="people_list"&gt;
+&lt;script id="person-template2" type="text/x-handlebars-template"&gt;
+    &lt;div class="person"&gt;
+        {{#each people}}
+            &lt;li&gt;
+                &lt;h1&gt;{{Name}}&lt;/h1&gt;
+                &lt;h5&gt;Age:{{Age}}&lt;/h5&gt;
+                &lt;h5&gt;Location:{{Location}}&lt;/h5&gt;
+                &lt;h5&gt;Origin:{{Origin}}&lt;/h5&gt;
+            &lt;/li&gt;
+        {{/each}}
+    &lt;/div&gt;
+&lt;/script&gt;
+&lt;/ul&gt;
+</pre>
+        <form class="bs-docs-example">
+            <button type="submit" id="btnGenerate5" class="btn btn-primary" >Generate Persons</button>
+            <div id="divTemplateLocation5"></div>
+        </form>
+<pre class="prettyprint linenums">
+
+&lt;script id="person-template2" type="text/x-handlebars-template"&gt;
+&lt;ul class="people_list"&gt;
+    &lt;div class="person"&gt;
+        {{#each people}}
+            &lt;li&gt;
+                &lt;h1&gt;{{Name}}&lt;/h1&gt;
+                &lt;h5&gt;Age:{{Age}}&lt;/h5&gt;
+                &lt;h5&gt;Location:{{Location}}&lt;/h5&gt;
+                &lt;h5&gt;Origin:{{Origin}}&lt;/h5&gt;
+            &lt;/li&gt;
+        {{/each}}
+    &lt;/div&gt;
+&lt;/ul&gt;
+&lt;/script&gt;
+
+function templatePerson(){
+    var data = { people: [
+        {Name:"Zequinha",Age:"21",Location:"Porto",Origin:"Espanha"},
+        {Name:"Joana",Age:"29",Location:"Albufeira",Origin:"Portugal"},
+        {Name:"Maria",Age:"25",Location:"Madrid",Origin:"Portugal"}
+    ]};
+    var source = $("#person-template2").html();
+    var template = Handlebars.compile(source);
+    var html = template(data);
+    $("[id$=divTemplateLocation5]").empty();
+    $("[id$=divTemplateLocation5]").html(html);
+}
+</pre>
+    </div>
+</section>
+<section id="listjs">
+    <div class="page-header">
+        <h4>List</h4>
+    </div>
+    <div>
+        This section will be explain all project basic functions and examples ListJs
+    </div>
+</section>
+<section id="underscore">
+    <div class="page-header">
+        <h4>Underscore</h4>
+    </div>
+    <div>
+        This section will be explain all project basic functions and examples underscore
+    </div>
+</section>
+<section id="noty">
+    <div class="page-header">
+        <h4>Noty</h4>
+    </div>
+    <div>
+        This section will be explain all project basic functions and examples noty
+    </div>
+    <p>Define Noty</p>
+    <form>
+        <label>Noty Show Message</label>
+        <button type="submit" id="btnShowMessage6" class="btn btn-primary" >Show Noty Message</button>
+    </form>
+<pre class="prettyprint linenums">
+$(document).ready(function () {
+    $("[id$=btnShowMessage6]").click(function () {
+        noty({ text: 'noty - a jquery notification library!' });
+    });
+});
+$.noty.defaults = {
+    layout: 'center',
+    theme: 'defaults',
+    type: 'warning',
+    text: '',
+    dismissQueue: true, // If you want to use queue feature set this true
+    template: '&lt;div&lg;&lt;/div&gt;&lt;div class="noty_text noty_text_class" &lg;&lt;/div&gt;',
+    animation: {
+        open: { height: 'show' },
+        close: { height: 'hide' },
+        speed: 100 // opening & closing animation speed
+    },
+    timeout: false, // delay for closing event. Set false for sticky notifications
+    force: false, // adds notification to the beginning of queue when set to true
+    modal: true,
+    closeWith: ['click'], // ['click', 'button', 'hover']
+    callback: {
+        onShow: function () { },
+        afterShow: function () { },
+        onClose: function () { },
+        afterClose: function () { }
+    },
+    buttons: false // an array of buttons
+};
+</pre>
+</section>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-right"><a href="#intro">Back to top</a></p>
+        <p>Designed and built with all the love in the world, or NOT of this and just because i'm forced to do this.</p>
+        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+            <li><a href="http://blog.getbootstrap.com">Read the blog</a></li>
+            <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Contacts</a></li>
+        </ul>
+    </div>
+</footer>
+<div id="divTemplates">
+<script id="person-template2" type="text/x-handlebars-template">
+    <ul class="people_list">
+        <div class="person">
+            {{#each people}}
+            <li>
+                <h1>{{Name}}</h1>
+                <h5>Age:{{Age}}</h5>
+                <h5>Location:{{Location}}</h5>
+                <h5>Origin:{{Origin}}</h5>
+            </li>
+            {{/each}}
+        </div>
+    </ul>
+</script>
+</div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-alert.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
+<script src="js/bootstrap-affix.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tutorial.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+<script src="https://github.com/downloads/wycats/handlebars.js/handlebars-1.0.rc.1.js"></script>
+<script type="text/javascript" src="js/noty/jquery.noty.js"></script>
+<script type="text/javascript" src="js/noty/themes/default.js"></script>
+<script type="text/javascript" src="js/noty/layouts/center.js"></script>
+
+
+<script type="text/javascript">
+    function sayHello(){
+        alert("Hello " +$("[id$=txtName]").val() + " !");
+        event.preventDefault();
+    }
+
+    function printName(){
+        $("[id$=lblNameResult]").text("Hello "+$("[id$=txtName2]").val()+" and welcome to this tutorial!!!");
+        event.preventDefault();
+    }
+
+    $(document).ready(function(){
+        prettyPrint();
+
+        $("[id$=btnSubmit3]").click(function(){
+            $("[id$=lblNameResult3]").text("Hello "+$("[id$=txtName3]").val()+" and welcome to this tutorial!!!");
+            event.preventDefault();
+        });
+
+        $("[id$=btnShow4]").click(function(){
+            $("[id$=lblUsername4]").show();
+            event.preventDefault();
+        });
+
+        $("[id$=btnHide4]").click(function(){
+            $("[id$=lblUsername4]").hide();
+            event.preventDefault();
+        });
+
+        $("[id$=chkEnable4]").click(function(){
+            $("[id$=btnShow4]").removeAttr("disabled");
+            $("[id$=btnHide4]").removeAttr("disabled");
+            $("[id$=btnAddClass4]").removeAttr("disabled");
+            $("[id$=btnRemoveClass4]").removeAttr("disabled");
+            $("[id$=chkDisable4]").removeAttr("checked");
+        });
+
+        $("[id$=chkDisable4]").click(function(){
+            $("[id$=btnShow4]").attr("disabled","disabled");
+            $("[id$=btnHide4]").attr("disabled","disabled");
+            $("[id$=btnAddClass4]").attr("disabled","disabled");
+            $("[id$=btnRemoveClass4]").attr("disabled","disabled");
+            $("[id$=chkEnable4]").removeAttr("checked");
+        });
+
+        $("[id$=btnAddClass4]").click(function(){
+            $("[id$=lblUsername4]").addClass('red');
+            event.preventDefault();
+        });
+
+        $("[id$=btnRemoveClass4]").click(function(){
+            $("[id$=lblUsername4]").removeClass('red');
+            event.preventDefault();
+        });
+
+        $("[id$=btnGenerate5]").click(function(){
+            templatePerson();
+            event.preventDefault();
+        });
+
+        $("[id$=btnShowMessage6]").click(function () {
+            noty({ text: 'noty - a jquery notification library!' });
+            event.preventDefault();
+        });
+    });
+
+    function templatePerson(){
+        var data = { people: [{Name:"Zequinha",Age:"21",Location:"Porto",Origin:"Espanha"},	{Name:"Joana",Age:"29",Location:"Albufeira",Origin:"Portugal"},	{ Name:"Maria",Age:"25",Location:"Madrid",Origin:"Portugal"} ]};
+        var source = $("#person-template2").html();
+        var template = Handlebars.compile(source);
+        var html = template(data);
+        $("[id$=divTemplateLocation5]").empty().html(html);
+    }
+
+    $.noty.defaults = {
+        layout: 'center',
+        theme: 'defaults',
+        type: 'warning',
+        text: '',
+        dismissQueue: true, // If you want to use queue feature set this true
+        template: '<div></div> <div class="noty_text noty_text_class" ></div>',
+        animation: {
+            open: { height: 'show' },
+            close: { height: 'hide' },
+            speed: 100 // opening & closing animation speed
+        },
+        timeout: false, // delay for closing event. Set false for sticky notifications
+        force: false, // adds notification to the beginning of queue when set to true
+        modal: true,
+        closeWith: ['click'], // ['click', 'button', 'hover']
+        callback: {
+            onShow: function () { },
+            afterShow: function () { },
+            onClose: function () { },
+            afterClose: function () { }
+        },
+        buttons: false // an array of buttons
+    };
+
+</script>
+
+</body>
+</html>
+
