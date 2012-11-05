@@ -1,0 +1,25 @@
+$.noty.defaults = {
+        layout: 'center',
+        theme: 'defaults',
+        type: 'warning',
+        text: '',
+        dismissQueue: true, // If you want to use queue feature set this true
+        template: '<div id="cpp_error_div" class="dialog" width="200px" height="100px"> <div height="25px" style="background-color:#fffff"  align="right"><div id="cancelX" style="cursor:hand; width:20px; height:20px" class="btnCloseModal"></div> </div> <div height="75px" style="padding:10px 10px 3px 10px" > <div width="10px" height="20px"> <div><asp:Image runat="server" id="imgWarning" SkinID="Warning" /></div><div class="noty_text"> </div></div> <div> <asp:Label runat="server" ID="lblAdviseCpp" > </asp:Label> </div> </div> </div> ',
+        animation: {
+            open: { height: 'show' },
+            close: { height: 'hide' },
+            
+            speed: 100 // opening & closing animation speed
+        },
+        timeout: false, // delay for closing event. Set false for sticky notifications
+        force: false, // adds notification to the beginning of queue when set to true
+        modal: false,
+        closeWith: ['click'], // ['click', 'button', 'hover']
+        callback: {
+            onShow: function () { },
+            afterShow: function () { },
+            onClose: function () { },
+            afterClose: function () { }
+        },
+        buttons: false // an array of buttons
+    };
